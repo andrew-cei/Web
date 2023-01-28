@@ -1,0 +1,131 @@
+/*Reseteo de parámetros*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Estilos generales*/
+
+body {
+  font-family: "Roboto Flex", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+p {
+  padding: 1rem;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+/*Estilos página principal*/
+
+.encabezado {
+  color: aliceblue;
+  background-color: #304d75;
+}
+
+.menu {
+  background-color: #536175;
+  padding: 1rem;
+  text-align: center;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.menu ul li a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  border-radius: 2px;
+  background-color: antiquewhite;
+  color: #304d75;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.principal {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "destacados aside";
+}
+
+.destacados {
+  background-color: #afcdf7;
+  grid-area: destacados;
+  padding: 1rem 2rem;
+}
+
+.aside {
+  background-color: #64a1f5;
+  grid-area: aside;
+  padding: 1rem 2rem;
+}
+
+/*Estilos página colaboradores*/
+
+.colaboradores {
+  background-color: #afcdf7;
+  display: flex;
+  margin: auto;
+  width: 80%;
+}
+
+.colaborador img {
+  border-radius: 2rem;
+  display: block;
+  margin: auto;
+  width: 75%;
+}
+
+/*Estilos formulario*/
+
+.formulario {
+  background-color: #afcdf7;
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+.destacados img {
+  border-radius: 2rem;
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+/*Estilos proyecto*/
+
+.principal img {
+  width: 100%;
+}
+
+.pie {
+  background-color: #4f7fc2;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+}
+
+#facebook {
+  background-color: aliceblue;
+  height: 50px;
+}
+
+#youtube {
+  height: 50px;
+}

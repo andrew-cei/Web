@@ -1,10 +1,3 @@
-/*Reseteo de parámetros*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /*Estilos generales*/
 
 body {
@@ -17,7 +10,7 @@ h1 {
 }
 
 p {
-  padding: 1rem;
+  padding: 2rem;
   text-align: center;
 }
 
@@ -47,6 +40,7 @@ ul {
 .menu ul li a {
   color: antiquewhite;
   text-decoration: none;
+  transition: all 0.5s;
 }
 
 .menu ul li a:hover {
@@ -57,11 +51,13 @@ ul {
   text-decoration: none;
 }
 
-.principal {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "destacados aside";
+@media screen and (min-width: 768px) {
+  .principal {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "destacados aside";
+  }
 }
 
 .destacados {
@@ -80,16 +76,30 @@ ul {
 
 .colaboradores {
   background-color: #afcdf7;
-  display: flex;
   margin: auto;
-  width: 80%;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .colaboradores {
+    background-color: #afcdf7;
+    display: flex;
+    margin: auto;
+    width: 80%;
+  }
 }
 
 .colaborador img {
   border-radius: 2rem;
   display: block;
+  filter: brightness(75%);
   margin: auto;
   width: 75%;
+  transition: all 1s;
+}
+
+.colaborador img:hover {
+  filter: brightness(100%);
 }
 
 /*Estilos formulario*/
@@ -106,6 +116,12 @@ ul {
   display: block;
   margin: auto;
   width: 50%;
+  transition: all 1s;
+}
+
+.destacados img:hover {
+  filter: brightness(200%);
+  width: 90%;
 }
 
 /*Estilos proyecto*/
@@ -124,8 +140,18 @@ ul {
 #facebook {
   background-color: aliceblue;
   height: 50px;
+  transition: all 0.5s;
+}
+
+#facebook:hover {
+  height: 100px;
 }
 
 #youtube {
   height: 50px;
+  transition: all 0.5s;
+}
+
+#youtube:hover {
+  height: 100px;
 }

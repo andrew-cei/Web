@@ -1,0 +1,168 @@
+/*Estilos generales*/
+
+body {
+  font-family: "Roboto Flex", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  padding: 1rem;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+/*Estilos página principal*/
+
+.encabezado {
+  color: aliceblue;
+  background-color: #304d75;
+}
+
+.menu {
+  background-color: #536175;
+  padding: 1rem;
+  text-align: center;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.menu ul li a {
+  color: antiquewhite;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.menu ul li a:hover {
+  border-radius: 2px;
+  background-color: antiquewhite;
+  color: #304d75;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .principal {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "destacados aside";
+  }
+}
+.destacados {
+  background-color: #afcdf7;
+  grid-area: destacados;
+  padding: 1rem 2rem;
+}
+
+.aside {
+  background-color: #64a1f5;
+  grid-area: aside;
+  padding: 1rem 2rem;
+}
+
+/*Estilos página colaboradores*/
+
+.colaboradores {
+  background-color: #afcdf7;
+  margin: auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .colaboradores {
+    background-color: #afcdf7;
+    display: flex;
+    margin: auto;
+    width: 80%;
+  }
+}
+
+.colaborador img {
+  border-radius: 2rem;
+  display: block;
+  filter: brightness(75%);
+  margin: auto;
+  width: 75%;
+  transition: all 1s;
+}
+
+.colaborador img:hover {
+  filter: brightness(100%);
+}
+
+/*Estilos formulario*/
+
+.formulario {
+  background-color: #afcdf7;
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+.destacados img {
+  border-radius: 2rem;
+  display: block;
+  margin: auto;
+  width: 50%;
+  transition: all 1s;
+}
+
+.destacados img:hover {
+  filter: brightness(200%);
+  width: 90%;
+}
+
+/*Estilos proyecto*/
+
+.principal img {
+  filter: blur(5px);
+  width: 100%;
+  transition: all 1s;
+}
+
+.principal img:hover {
+  filter: none;
+}
+
+/*Estilos footer*/
+
+.pie {
+  background-color: #4f7fc2;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+}
+
+#facebook {
+  background-color: aliceblue;
+  height: 50px;
+  transition: all 0.5s;
+}
+
+#facebook:hover {
+  height: 100px;
+}
+
+#youtube {
+  height: 50px;
+  transition: all 0.5s;
+}
+
+#youtube:hover {
+  height: 100px;
+}

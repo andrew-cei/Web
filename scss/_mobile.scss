@@ -1,0 +1,71 @@
+/*Estilos página principal*/
+.encabezado {
+  color: aliceblue;
+  background-color: $dark_blue;
+}
+.destacados {
+  background-color: $light_blue;
+  grid-area: destacados;
+  padding: 1rem 2rem;
+}
+.img_main {
+  border-radius: 2rem;
+  filter: brightness(75%);
+  display: block;
+  margin: auto;
+  width: 75%;
+  transition: all 1s;
+  &:hover {
+    filter: brightness(100%);
+    width: 100%;
+  }
+}
+.video {
+  margin: auto;
+  display: flex;
+}
+/*Estilos página colaboradores*/
+.colaboradores {
+  background-color: $light_blue;
+  margin: auto;
+  width: 100%;
+}
+.img_colab {
+  border-radius: 1rem;
+  display: block;
+  filter: brightness(75%);
+  margin: auto;
+  width: 75%;
+  transition: all 1s;
+  &:hover {
+    filter: brightness(100%);
+  }
+}
+/*Estilos formulario*/
+.formulario {
+  background-color: $light_blue;
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+/*Estilos nosotros*/
+.img_nosotros {
+  display: block;
+  margin: auto;
+  border-radius: 2%;
+  filter: brightness(100%);
+  width: 75%;
+  transition: all 1s;
+  &:hover {
+    filter: brightness(110%);
+  }
+}
+/*Estilos proyecto*/
+.img_proyecto {
+  filter: blur(2px);
+  width: 100%;
+  transition: all 1s;
+  &:hover {
+    filter: none;
+  }
+}

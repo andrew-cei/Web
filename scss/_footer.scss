@@ -1,0 +1,25 @@
+/*Estilos footer*/
+
+.pie {
+  background-color: #4f7fc2;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+}
+
+#facebook {
+  background-color: aliceblue;
+  height: 50px;
+  transition: all 0.5s;
+  &:hover {
+    height: 75px;
+  }
+}
+
+#youtube {
+  height: 50px;
+  transition: all 0.5s;
+  &:hover {
+    height: 75px;
+  }
+}

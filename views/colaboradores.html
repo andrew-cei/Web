@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tenemos a los mejores especialistas en el área."
+    />
+    <meta name="keywords" content="Inteligencia Artificial, Ciencia, Datos" />
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,38 +28,72 @@
   <body>
     <header class="encabezado">
       <h1>Colaboradores</h1>
-      <nav class="menu">
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="colaboradores.html">Colaboradores</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-        </ul>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Inicio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  >Colaboradores</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main class="colaboradores">
       <div class="colaborador">
-        <img src="../img/Persona_1.jpg" alt="" />
+        <img src="../img/Persona_1.jpg" alt="Dra. Amanda" class="img_colab" />
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
-          officiis voluptate eveniet! Beatae saepe error molestiae! Illum
-          aspernatur quas et dicta, deleniti repellendus nihil sequi, molestias
-          possimus, ab corporis animi!
+          La Dra. Amanda es la coordinadora de los equipos de trabajo, es
+          especialista en ciencia de datos y gestión de proyectos, por lo que,
+          su proyecto se desarrollará en en el tiempo estipulado y dentro del
+          presupuesto asignado.
         </p>
       </div>
       <div class="colaborador">
-        <img src="../img/Persona_2.jpg" alt="" />
+        <img
+          src="../img/Persona_2.jpg"
+          alt="Equipos de trabajo"
+          class="img_colab"
+        />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          mollitia molestiae amet odit velit ullam veritatis deserunt dolorum
-          praesentium rerum harum voluptas aut, aperiam qui est minus fuga
-          libero quas!
+          Contamos con especialistas del más alto nivel que han trabajado en
+          proyectos grandes y para diversas instituciones tanto públicas como
+          privadas. Los equipos de trabajo se forman dependiendo de las
+          necesidades de su proyecto.
         </p>
       </div>
     </main>
     <footer class="pie">
-      <img src="../img/Facebook.png" alt="Facebook logo" id="facebook" />
-      <img src="../img/Youtube.png" alt="Youtube logo" id="youtube" />
+      <a href="https://es-la.facebook.com/" target="_blank">
+        <img src="../img/Facebook.png" alt="Facebook logo" id="facebook" />
+      </a>
+      <a href="https://www.youtube.com/" target="_blank">
+        <img src="../img/Youtube.png" alt="Youtube logo" id="youtube" />
+      </a>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

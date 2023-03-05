@@ -1,40 +1,5 @@
-/*Colores del proyecto*/
-$dark_blue: #304d75;
-$shadow_blue: #536175;
-$aqua_blue: #64a1f5;
-$light_blue: #afcdf7;
-
-/*Estilos generales*/
-
-body {
-  font-family: "Roboto Flex", Arial, Helvetica, sans-serif;
-}
-
-h1 {
-  font-size: 5rem;
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
-}
-
-p {
-  padding: 1rem;
-  text-align: center;
-}
-
-.aside {
-  background-color: $aqua_blue;
-  grid-area: aside;
-  padding: 1rem 2rem;
-}
-
-.navbar {
-  background-color: $shadow_blue;
-}
-
 /* Estilos por página*/
+@import "general";
 @import "footer";
 @import "responsive";
 @import "mobile";
